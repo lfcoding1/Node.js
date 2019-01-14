@@ -2,7 +2,10 @@
   "name": "hyf-node-week-1-homework",
   "version": "2.0.0",
   "description": "HackYourFuture Node.js Week 1 - Homework",
-  "repository": "https://github.com/HackYourFuture/nodejs.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HackYourFuture/nodejs.git"
+  },
   "main": "src/index.js",
   "author": "George Sapkin",
   "license": "MIT",
@@ -25,5 +28,15 @@
     "files": [
       "test/*.test.js"
     ]
+  },
+  "bugs": {
+    "url": "https://github.com/HackYourFuture/nodejs/issues"
+  },
+  "homepage": "https://github.com/HackYourFuture/nodejs#readme",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "mathjs": "^5.4.1"
   }
 }
