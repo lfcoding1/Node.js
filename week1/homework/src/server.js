@@ -14,6 +14,9 @@ function createServer(port) {
   const server = http.createServer((request, response) => {
     console.log(request.method, request.url);
     switch (request.url){
+      case '/':
+        response.writeHead(200, {'Content-Type': 'text/html'});
+        response.end('<!doctype html><html><head></head><body>Hello Hack Your Future</body></html>');
       case '/state':
         response.writeHead(200, {'Content-Type': 'application/json'});
         response.end(JSON.stringify( {state: state}));
@@ -50,7 +53,6 @@ function createServer(port) {
 module.exports = {
   createServer
 };
-
 
 
 
