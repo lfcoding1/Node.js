@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+    <head>
+        <title>build a server homework</title>
+    </head>
+    <body>
+        <h1>Hi Hack Your Future</h1>
+    </body>
+</html>
+
+
+
+
+switch (request.url){
+    case '/':
+      fs.readFile('www/index.html', 'utf8', ((error, data)=>{
+          response.writeHead(200, {'Content-Type': 'text/html'});
+          response.end(data);
+      }));
+
+
+      const fs = require('fs');
