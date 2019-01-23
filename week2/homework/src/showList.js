@@ -9,12 +9,10 @@ module.exports = {
         fs.readFile('todolist.txt', 'utf8', function (err, data){
             if (err){
             console.log('cannot access to-do list')
-        } else {
+            } else {
             console.log(data)
-        } 
-        
-        });
-        
-    },
+            } 
+        });   
+    }
     }
    

@@ -2,8 +2,6 @@
 
 const fs = require('fs');
 
-
-
 module.exports = {
     reset: function(){
         let index = process.argv[3];
@@ -12,7 +10,5 @@ module.exports = {
         let removed = parse.splice(index, 0)
         fs.writeFileSync('todolist.txt', JSON.stringify(removed), 'utf8');
         console.log('To do List is now reset');
-    
-     
      }
 }

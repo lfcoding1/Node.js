@@ -3,7 +3,6 @@
 const fs = require('fs');
 
 
-
 module.exports = {
     removeItem: function(){
        let index = process.argv[3];
@@ -12,9 +11,6 @@ module.exports = {
        let removed = parse.splice(1, index)
        fs.writeFileSync('todolist.txt', JSON.stringify(removed), 'utf8');
        console.log('item removed from your list');
-   
-    
     }
-    
 }
 

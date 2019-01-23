@@ -2,7 +2,7 @@
 const fs = require('fs');
 
 module.exports ={
-        showHelp: function(){
+    showHelp: function(){
     console.log(`Here are the commands to use when creating your to-do list: \n
     
     Commands: \n
@@ -14,7 +14,7 @@ module.exports ={
         list: shows your current to-do list \n
         remove: removes an item from your to-do list (+ indexnumber) \n
         no command: will send you to this help section \n`)
-}
+    }
 }
 
 
