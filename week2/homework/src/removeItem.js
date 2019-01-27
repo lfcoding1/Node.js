@@ -11,11 +11,12 @@ module.exports = {
             console.log('cannot access to-do list');
             } else {
             let parse = JSON.parse(data);
-            let removed = parse.splice(index -1, 1);
-            fs.writeFileSync('todolist.txt', JSON.stringify(removed), 'utf8');
+            parse.splice((index-1), 1);
+            fs.writeFileSync('todolist.txt', JSON.stringify(parse), 'utf8');
             console.log('item removed from your list');
             }
         })
     }
 }
+
 
